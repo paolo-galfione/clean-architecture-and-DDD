@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Clean Architecture and Domain Driven Design</title>
+</head>
+<body>
+
+    <!-- barra di navigazione -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Clean Architecture and DDD</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Attività</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contatti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Aziende</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- contenuto della pagina -->
+    <div class="container">
+        <div class="row mt-5 mb-2">
+            <h2 class="col text-muted">Attività in corso</h2>
+            <div class="col text-end me-4">
+                <button type="button" class="btn btn-outline-primary">Nuova attività</button>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <th scope="col">Contatto</th>
+                <th scope="col">Ruolo</th>
+                <th scope="col">Attività</th>
+                <th scope="col">Stato</th>
+                <th scope="col">Scadenza</th>
+                <th scope="col" class="text-center">Comandi</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align-middle">
+                        <img src="./assets/images/Alberto_Bariscotto.jpg" class="avatar">
+                        <span> Alberto Bariscotto</span>    
+                    </td>
+                    <td class="align-middle">Project Manager</td>
+                    <td class="align-middle text-truncate">Condividere analisi progetto Telemedicina</td>
+                    <td class="align-middle"><span class="badge bg-warning text-dark">3 giorni</span></td>
+                    <td class="align-middle">30/01/2022</td>
+                    <td class="align-middle">
+                        <div class="d-flex justify-content-evenly">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="bi bi-pencil text-muted"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-danger">
+                                <i class="bi bi-trash text-danger"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img src="./assets/images/Carla_Darindoli.jpg" class="avatar">
+                        <span> Carla Darindoli</span>    
+                    </td>
+                    <td class="align-middle">Web Designer</td>
+                    <td class="align-middle text-truncate">Organizzare call per progetto Design Sprint</td>
+                    <td class="align-middle"><span class="badge bg-info text-dark">10 giorni</span></td>
+                    <td class="align-middle">11/02/2022</td>
+                    <td class="align-middle">
+                        <div class="d-flex justify-content-evenly">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="bi bi-pencil text-muted"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-danger">
+                                <i class="bi bi-trash text-danger"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img src="./assets/images/Enzo_Farzoreno.jpg" class="avatar">
+                        <span> Enzo Farzoreno</span>    
+                    </td>
+                    <td class="align-middle">Software Architect</td>
+                    <td class="align-middle text-truncate">Chiedere feedback colloqui con i Frontend Junior</td>
+                    <td class="align-middle"><span class="badge bg-info text-dark">17 giorni</span></td>
+                    <td class="align-middle">18/02/2022</td>
+                    <td class="align-middle">
+                        <div class="d-flex justify-content-evenly">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="bi bi-pencil text-muted"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-danger">
+                                <i class="bi bi-trash text-danger"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img src="./assets/images/Giada_Hormes.jpg" class="avatar">
+                        <span> Giada Hormes</span>    
+                    </td>
+                    <td class="align-middle">Account Manager</td>
+                    <td class="align-middle text-truncate">Organizzare presentazione a Assistenza Nova</td>
+                    <td class="align-middle"><span class="badge bg-info text-dark">24 giorni</span></td>
+                    <td class="align-middle">25/02/2022</td>
+                    <td class="align-middle">
+                        <div class="d-flex justify-content-evenly">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="bi bi-pencil text-muted"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-danger">
+                                <i class="bi bi-trash text-danger"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <img src="./assets/images/Carla_Darindoli.jpg" class="avatar">
+                        <span> Carla Darindoli</span>    
+                    </td>
+                    <td class="align-middle">Web Designer</td>
+                    <td class="align-middle text-truncate">Verifica nuovi mockup Progetto TERA</td>
+                    <td class="align-middle"><span class="badge bg-secondary">Completata</span></td>
+                    <td class="align-middle">Non definita</td>
+                    <td class="align-middle">
+                        <div class="d-flex justify-content-evenly">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="bi bi-pencil text-muted"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-danger">
+                                <i class="bi bi-trash text-danger"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
+
+    <!-- footer fisso -->
+
+    <nav class="navbar fixed-bottom navbar-light bg-light" >
+            <div class="w-100 d-flex justify-content-between">
+                <div class="p-2 bd-highlight">
+                    <a href="https://www.linkedin.com/in/paologalfione/" class=""><i class="bi-linkedin"></i></a>
+                    <span class="text-muted p">Paolo Galfione</span>
+                    <a href="https://www.zucchetti.it/" class="ms-10">Zucchetti Spa</a>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <a href="https://github.com/paolo-galfione/clean-architecture-and-DDD" class=""><i class="bi-github"></i></a>
+                    <span class="text-muted p">GitHub (2022)</span>
+                </div>
+            </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+</html>
